@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name = "detailText"> #FF9000</color>
+    <color name = "buttonColors"> #C3CFC6</color>
+    <color name = "Main"> #00878D</color>
+    <color name = "darkBlue"> #586D6E</color>
+
+</resources>

@@ -1,0 +1,223 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.ben.weight.createAccount"
+    android:background="@color/Main"
+    android:elevation="0dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/createAccountTitle"
+        android:id="@+id/createAccountTitle"
+        android:textStyle="normal|italic"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+
+
+    <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Main"
+            android:id="@+id/tableLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+            <TableRow android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="30dp"
+
+                android:paddingRight="5dp"
+                android:paddingTop="5dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/fName"
+                    android:layout_weight="1"
+                    android:elevation="0dp"
+                    android:hint="@string/firstName" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkBoxFirst"
+                    android:layout_column="1"
+                    android:background="@drawable/unchecked"
+                    android:layout_span="20" />
+            </TableRow>
+
+
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="30dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+               >
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/lName"
+                    android:layout_weight="1"
+                    android:elevation="0dp"
+                    android:hint="@string/lastName" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkBoxLast"
+                    android:layout_column="20"
+                    android:background="@drawable/unchecked" />
+            </TableRow>
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="30dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp">
+
+            <EditText
+                android:layout_width="432dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/usernameCreate"
+                android:layout_weight="1"
+                android:elevation="0dp"
+                android:hint="@string/usernameCreate" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkUsername"
+                android:layout_column="20"
+                android:background="@drawable/unchecked" />
+
+
+        </TableRow>
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="30dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp">
+
+                <EditText
+                    android:layout_width="432dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/email"
+                    android:layout_weight="1"
+                    android:elevation="0dp"
+                    android:hint="@string/emailAddress" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkBoxEmail"
+                    android:layout_column="20"
+                    android:background="@drawable/unchecked" />
+
+
+           </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="30dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp">
+
+                <EditText
+                    android:layout_width="432dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/passwordAccount"
+                    android:layout_weight="1"
+                    android:elevation="0dp"
+                    android:hint="@string/passwordEntryTwo" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkBoxPassword"
+                    android:layout_column="20"
+                    android:background="@drawable/unchecked" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="30dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp">
+
+                <EditText
+                    android:layout_width="432dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/passwordConfirm"
+                    android:layout_weight="1"
+                    android:elevation="0dp"
+                    android:hint="@string/confirmPassword" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkBoxConfirm"
+                    android:layout_column="20"
+                    android:background="@drawable/unchecked" />
+
+
+            </TableRow>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/submit"
+            android:id="@+id/createAccountButton"
+            android:layout_marginRight="15dp"
+            android:onClick="true"/>
+
+         </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ben.weight" >
+
+    <application
+        android:name=".ApplicationContextProvider"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".WorkoutSchedule"
+            android:label="@string/title_activity_workout_schedule" >
+        </activity>
+        <activity
+            android:name=".loginScreen"
+            android:label="@string/title_activity_login_screen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".teamCreation"
+            android:label="@string/title_activity_team_creation" >
+        </activity>
+        <activity
+            android:name=".createAccount"
+            android:label="@string/title_activity_create_account"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+
+    </application>
+
+
+</manifest>

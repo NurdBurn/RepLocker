@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.ben.Weight.MainDisplay"
+    android:background="@color/Main"
+    android:clickable="true">
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TableRow android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/weightClass"
+                android:id="@+id/weightClass"
+                android:textSize="35sp"
+                android:gravity="center_vertical|center_horizontal" />
+        </TableRow>
+
+        <TableRow android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/dummyWeightClass"
+                android:id="@+id/dynamicWeightClass"
+                android:textColor="@color/detailText"
+                android:textSize="35sp"
+                android:gravity="center_horizontal" />
+        </TableRow>
+
+      <ScrollView
+          android:fillViewport="true"
+          android:layout_height="334dp">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:id="@+id/homeBench">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Test"
+                    android:textColor="@color/detailText"
+                    android:textSize="35sp"
+                    android:gravity="center_vertical|center_horizontal" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/homeIncline">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Test"
+                    android:textColor="@color/detailText"
+                    android:textSize="35sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/homePower">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Test"
+                    android:textColor="@color/detailText"
+                    android:textSize="35sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/homeHang">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Test"
+                    android:textColor="@color/detailText"
+                    android:textSize="35sp"
+                    android:layout_marginTop="45dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/homeSquat">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Test"
+                    android:textColor="@color/detailText"
+                    android:textSize="35sp"
+                    android:layout_marginTop="45dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/homeDead">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Test"
+                    android:textColor="@color/detailText"
+                    android:textSize="35sp"
+                    android:layout_marginTop="45dp" />
+            </TableRow>
+
+        </TableLayout>
+
+      </ScrollView>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/viewWorkoutSchedule"
+            android:id="@+id/workoutButton"
+            android:background="@color/buttonColors"
+            android:layout_gravity="center_vertical|bottom" />
+
+
+     </TableLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

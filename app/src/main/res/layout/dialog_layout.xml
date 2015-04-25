@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/detailText">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/reps"
+        android:hint="@string/numberOfReps"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/dialogWeight"
+        android:hint="@string/lbs"
+        android:layout_below="@+id/reps"
+        android:layout_alignLeft="@+id/reps"
+        android:layout_alignStart="@+id/reps"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:onClick="dialogEnter"
+        android:id="@+id/dialogUpdate"
+        android:layout_below="@+id/dialogWeight"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
